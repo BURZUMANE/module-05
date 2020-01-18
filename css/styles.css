@@ -1,0 +1,107 @@
+/* GLOBAL STYLES */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 1px solid teal;
+}
+
+html {
+    box-sizing: border-box;
+}
+/* BLOCK LINKS FOR FULL HEIGHT */
+a{
+    display: block;
+    text-decoration: none;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-family: "roboto", "Arial", sans-serif;
+    color: #555252;
+}
+
+.container{
+    width: 1100px;
+    outline: 3px solid black;
+    margin: 0 auto;
+}
+
+/* UPPER CASE TEXT */
+.upper {
+    text-transform: uppercase;
+}
+/* HEADER */
+
+.logo{
+    color: #555252;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+
+.logo span{
+    font-weight: 900;
+    color: #1abc9c;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 28px;
+}
+
+
+.main-menu{
+    padding: 0;
+    width: 475px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.main-menu-item a{
+    font-family: "open sans";
+    font-size: 14px;
+    color: #0f0101;
+    font-weight: 900;
+    line-height: 0.786;
+}
+
+.main-menu-item a:hover, .page-menu-item a:focus    {
+    color: #1abc9c;
+}
+/* MAIN */
+
+.main-content{
+    background-color: #e9f0fd;
+}
+/* SLIDER */
+
+.slider{
+    position: relative;
+}
+
+.slider-content{
+    position: absolute;
+    width: 1100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.slider-ctrl {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    background-color: #1abc9c;
+    top: 50%;
+    border: none;
+}
