@@ -227,9 +227,9 @@ body{
   /* NEW COLLECTION */
 
 .collection{
-    margin-bottom: 88px;
+    padding-bottom: 88px;
 }
-  .section-title{
+.section-title{
     text-align: center;
     font-size: 48px;
     font-weight: 900;
