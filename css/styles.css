@@ -438,4 +438,7 @@ body{
     height: 17px;
     z-index: 4;
   }
-  
+
+.flex {
+    display: flex;
+}

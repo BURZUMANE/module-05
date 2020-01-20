@@ -1,208 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:100,100i,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:100,100i,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header container">
-        <nav class="main-nav upper">
-            <a href="#" class="logo">
-                <p class="logo-text"><span>f</span>art</p>
-            </a>
-            <ul class="main-menu">
-                <li class="main-menu-item">
-                    <a href="#">home</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#">about us</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#">page</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#">shop</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#">blog</a>
-                </li>
-                <li class="main-menu-item">
-                    <a href="#">contact us</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="main-nav upper">
+        <a href="#" class="logo">
+          <p class="logo-text"><span>f</span>art</p>
+        </a>
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a href="#">home</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#">about us</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#">page</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#">shop</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#">blog</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="#">contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-content">
-        <section class="slider-container">
-            <div class="btn-container">
-                <button id="arrowLeft" class="slider-ctrl slider-ctrl-prev"></button>
-                <button  id="arrowRight" class="slider-ctrl slider-ctrl-next"></button>
+      <section class="slider-container">
+        <div class="btn-container">
+          <button id="arrowLeft" class="slider-ctrl slider-ctrl-prev"></button>
+          <button id="arrowRight" class="slider-ctrl slider-ctrl-next"></button>
+        </div>
+        <div class="slider">
+          <ul>
+            <li class="slide slide1">
+              <div class="overlay"></div>
+              <div class="slide-content">
+                <div class="text-container">
+                  <h2 class="slide-title">cheap tours to paris</h2>
+                  <p>CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+                </div>
+              </div>
+            </li>
+            <li class="slide slide2">
+              <div class="overlay"></div>
+              <div class="slide-content">
+                <h2>FANCY RESTURANTS IN KYIV</h2>
+                <p>EAT AS MUCH AS YOU FUCKING CAN</p>
+              </div>
+            </li>
+            <li class="slide slide3">
+              <div class="overlay"></div>
+              <div class="slide-content">
+                <h2>FRESH AVOCADO</h2>
+                <p>AVOCADO IS FUCKING HEALTHY AS FUCK</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="collection container">
+        <h3 class="section-title">new collection</h3>
+        <ul class="collection-list">
+          <li class="collection-item">
+            <div class="colection-item-hidden"></div>
+            <div class="hidden-content">
+              <div class="hidden-content-narrow">
+                <a href="#" class="hidden-btn like"></a>
+                <a href="#" class="hidden-btn shuffle"></a>
+                <a href="#" class="hidden-btn clock"></a>
+              </div>
+              <div class="hidded-content-wide">
+                <a class="hidden-btn btn-wide"><span>add to cart</span></a>
+              </div>
             </div>
-            <div class="slider">
-                <ul>
-                    <li class="slide slide1">
-                        <div class="overlay">
-                        </div>
-                        <div class="slide-content">
-                            <div class="text-container">
-                                <h2 class="slide-title">cheap tours to paris</h2>
-                                <p>CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="slide slide2">
-                        <div class="overlay">
-                        </div>
-                        <div class="slide-content">
-                            <h2>FANCY RESTURANTS IN KYIV</h2>
-                            <p>EAT AS MUCH AS YOU FUCKING CAN</p>
-                        </div>
-                    </li>
-                    <li class="slide slide3">
-                        <div class="overlay">
-                        </div>
-                        <div class="slide-content">
-                            <h2>FRESH AVOCADO</h2>
-                            <p>AVOCADO IS FUCKING HEALTHY AS FUCK</p>
-                        </div>
-                    </li>
-                </ul>
+            <img src="img/person1.png" alt="" />
+            <div class="featured-item-details">
+              <p class="feeatured-item-name price-font">
+                blue tshirt
+              </p>
+              <div class="item-price-container">
+                <p class="price price-font">$26</p>
+              </div>
             </div>
-        </section>
-        <section class="collection container">
-            <h3 class="section-title">new collection</h3>
-            <ul class="collection-list">
-                <li class="collection-item">
-                    <div class="colection-item-hidden">
-                    </div>
-                    <div class="hidden-content">
-                        <div class="hidden-content-narrow">
-                            <a href="#">
-                                <button class="hidden-btn like"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn shuffle"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn clock"></button>
-                            </a>
-                        </div>
-                        <div class="hidded-content-wide">
-                            <a class="hidden-btn btn-wide"><span>add to cart</span></a>
-                        </div>
-                    </div>
-                    <img src="img/person1.png" alt="">
-                    <div class="featured-item-details">
-                        <p class="feeatured-item-name price-font">
-                            blue tshirt
-                        </p>
-                        <div class="item-price-container">
-                            <p class="price price-font">$26</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="collection-item">
-                    <div class="colection-item-hidden">
-                    </div>
-                    <div class="hidden-content">
-                        <div class="hidden-content-narrow">
-                            <a href="#">
-                                <button class="hidden-btn like"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn shuffle"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn clock"></button>
-                            </a>
-                        </div>
-                        <div class="hidded-content-wide">
-                            <a class="hidden-btn btn-wide"><span>add to cart</span></a>
-                        </div>
-                    </div>
-                    <img src="img/person2.png" alt="">
-                    <div class="featured-item-details">
-                        <p class="feeatured-item-name price-font">
-                            blue tshirt
-                        </p>
-                        <div class="item-price-container">
-                            <p class="price price-font">$26</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="collection-item">
-                    <div class="colection-item-hidden">
-                    </div>
-                    <div class="hidden-content">
-                        <div class="hidden-content-narrow">
-                            <a href="#">
-                                <button class="hidden-btn like"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn shuffle"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn clock"></button>
-                            </a>
-                        </div>
-                        <div class="hidded-content-wide">
-                            <a class="hidden-btn btn-wide"><span>add to cart</span></a>
-                        </div>
-                    </div>
-                    <img src="img/person3.png" alt="">
-                    <div class="featured-item-details">
-                        <p class="feeatured-item-name price-font">
-                            blue tshirt
-                        </p>
-                        <div class="item-price-container">
-                            <p class="price price-font">$26</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="collection-item">
-                    <div class="colection-item-hidden">
-                    </div>
-                    <div class="hidden-content">
-                        <div class="hidden-content-narrow">
-                            <a href="#">
-                                <button class="hidden-btn like"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn shuffle"></button>
-                            </a>
-                            <a href="#">
-                                <button class="hidden-btn clock"></button>
-                            </a>
-                        </div>
-                        <div class="hidded-content-wide">
-                            <a class="hidden-btn btn-wide"><span>add to cart</span></a>
-                        </div>
-                    </div>
-                    <img src="img/person4.png" alt="">
-                    <div class="featured-item-details">
-                        <p class="feeatured-item-name price-font">
-                            blue tshirt
-                        </p>
-                        <div class="item-price-container">
-                            <p class="price price-font">$26</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <footer class="footer">
-            <p class="copy-rights">
-                ALL Rights Reserved ® Dokan | <span>ThemenGraph</span>
-            </p>
-        </footer>
+          </li>
+          <li class="collection-item">
+            <div class="colection-item-hidden"></div>
+            <div class="hidden-content">
+              <div class="hidden-content-narrow">
+                <a href="#" class="hidden-btn like"></a>
+                <a href="#" class="hidden-btn shuffle"></a>
+                <a href="#" class="hidden-btn clock"></a>
+              </div>
+              <div class="hidded-content-wide">
+                <a class="hidden-btn btn-wide"><span>add to cart</span></a>
+              </div>
+            </div>
+            <img src="img/person2.png" alt="" />
+            <div class="featured-item-details">
+              <p class="feeatured-item-name price-font">
+                blue tshirt
+              </p>
+              <div class="item-price-container">
+                <p class="price price-font">$26</p>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="colection-item-hidden"></div>
+            <div class="hidden-content">
+              <div class="hidden-content-narrow">
+                <a href="#" class="hidden-btn like"></a>
+                <a href="#" class="hidden-btn shuffle"></a>
+                <a href="#" class="hidden-btn clock"></a>
+              </div>
+              <div class="hidded-content-wide">
+                <a class="hidden-btn btn-wide"><span>add to cart</span></a>
+              </div>
+            </div>
+            <img src="img/person3.png" alt="" />
+            <div class="featured-item-details">
+              <p class="feeatured-item-name price-font">
+                blue tshirt
+              </p>
+              <div class="item-price-container">
+                <p class="price price-font">$26</p>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item">
+            <div class="colection-item-hidden"></div>
+            <div class="hidden-content">
+              <div class="hidden-content-narrow">
+                <a href="#" class="hidden-btn like"></a>
+                <a href="#" class="hidden-btn shuffle"></a>
+                <a href="#" class="hidden-btn clock"></a>
+              </div>
+              <div class="hidded-content-wide">
+                <a class="hidden-btn btn-wide"><span>add to cart</span></a>
+              </div>
+            </div>
+            <img src="img/person4.png" alt="" />
+            <div class="featured-item-details">
+              <p class="feeatured-item-name price-font">
+                blue tshirt
+              </p>
+              <div class="item-price-container">
+                <p class="price price-font">$26</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <p class="copy-rights">
+          ALL Rights Reserved ® Dokan | <span>ThemenGraph</span>
+        </p>
+      </footer>
+      <div class="flex">
+        Hello
+        <div>Flex</div>
+        <br />!
+      </div>
     </main>
-    <script src="main.js">
-
-    </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
