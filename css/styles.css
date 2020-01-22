@@ -68,7 +68,7 @@ body{
     right: 0;
     transform: translateY(-50%);
     padding: 0;
-    width: 490x;
+    width: 490px;
     align-items: center;
     list-style: none;
 }
@@ -339,7 +339,8 @@ body{
 .btn-wide{
     text-align: center;
     background-color: #323232;
-    font-family: 'roboto', 400;
+    font-family: 'roboto';
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     width: 166px;
