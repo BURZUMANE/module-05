@@ -271,11 +271,9 @@ body{
 .collection-list{
     max-width: 1110px;
     list-style: none;
-    outline: 1px solid teal;
 }
 
 .collection-item{
-    outline: 2px black solid;
     float: left;
     position: relative;
     height: 322px;
