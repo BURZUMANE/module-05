@@ -31,7 +31,7 @@ body{
 }
 
 .container{
-    width: 1110px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -71,6 +71,7 @@ body{
     width: 490px;
     align-items: center;
     list-style: none;
+    
 }
 
 .main-menu-item{
@@ -101,7 +102,7 @@ body{
 .btn-container{
     position: absolute;
     display: block;
-    width: 1100px;
+    width: 80%;
     height: 104px;
     top: 50%;
     left: 50%;
@@ -157,9 +158,8 @@ body{
 
 
 .text-container{
-    outline: 1px solid teal;
     top: 50%;
-    width: 60%;
+    width: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -269,13 +269,15 @@ body{
 }
 
 .collection-list{
+    max-width: 1110px;
     list-style: none;
+    outline: 1px solid teal;
 }
 
 .collection-item{
+    outline: 2px black solid;
     float: left;
     position: relative;
-    background: red;
     height: 322px;
     width: 255px;
 }
@@ -448,5 +450,3 @@ body{
 .footer p span{
     color: #46bfa9;
 }
-
-
