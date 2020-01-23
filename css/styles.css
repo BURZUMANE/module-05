@@ -144,12 +144,15 @@ body{
     background-color: rgba(0, 0, 0, 0.52);
 }
 
-.overlay{
+.slide::before{
+    content: "";
+    background-color: purple;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-
 }
 
 
@@ -176,16 +179,6 @@ body{
     text-align: center;
 }
 
-.arrow{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    background-color: #4ec6ab;
-    opacity: 0.651;
-    width: 104px;
-    height: 104px;
-}
-
 
 .left{
     position: relative;
@@ -205,10 +198,16 @@ body{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    background-color: rgba(78, 198, 171, 0.52);
+    background-color: #4ec6ac;
+    opacity: 0.52;
     width: 104px;
-    height: 104px;
+    height: 104px;  
     border: none;
+    outline: none;
+}
+
+.slider-ctrl:hover{
+    opacity: 1;
 }
 
 .slider-ctrl-prev{
@@ -304,8 +303,8 @@ body{
 .hidden-content{
     opacity: 0;
     position: absolute;
-    top: 90px;
-    left: 45px;
+    margin: 90px auto;
+    top: 0; left: 0; bottom: 0; right: 0;
     width: 166px;
 }
 
