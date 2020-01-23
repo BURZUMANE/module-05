@@ -130,6 +130,11 @@ body{
     background-position: center;
 }
 
+.slide-image{
+    z-index: 10;
+    object-fit: cover;
+}
+
 .slide1{
     background-image: url(../img/slide4.png);
     background-color: rgba(0, 0, 0, 0.52);
@@ -147,7 +152,6 @@ body{
 
 .slide::before{
     content: "";
-    background-color: purple;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -414,7 +418,10 @@ body{
     height: 40px;
     width: 40px;
     background-color:#8c8c8c;
+    background-color: #ffffff;
+    opacity: 0.439;
 }
+
 
 .price{
     text-align: center;
