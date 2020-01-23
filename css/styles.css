@@ -417,9 +417,7 @@ body{
     padding: 4px;
     height: 40px;
     width: 40px;
-    background-color:#8c8c8c;
-    background-color: #ffffff;
-    opacity: 0.439;
+    background-color: rgba(255, 255, 255, 0.439);
 }
 
 
@@ -433,7 +431,7 @@ body{
 }
 
 .collection-item:hover .item-price-container{
-    background-color: #7fd9c7;
+    background-color: rgb(255, 255, 255, 0.439);
 }
 
 .footer{
