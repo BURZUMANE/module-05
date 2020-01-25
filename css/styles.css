@@ -31,7 +31,7 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -42,33 +42,26 @@ body{
 /* HEADER */
 
 .logo{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    float: left;
     color: #555252;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 30px;
+    line-height: 30px;
 }
 
-.logo span{
+.logo::first-letter{
     font-weight: 900;
     color: #1abc9c;
 }
+
 .main-nav{
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 28px;
+    padding: 37px 0;
 }
 
 
 .main-menu{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    float: right;
     padding: 0;
-    width: 490px;
     align-items: center;
     list-style: none;
     
@@ -82,12 +75,14 @@ body{
     margin-right: 33px;
 }
 
+
 .main-menu-item a{
     font-family: "open sans";
     font-size: 14px;
     color: #0f0101;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 0.786;
+    line-height: 30px;
 }
 
 .main-menu-item a:hover, .page-menu-item a:focus    {
@@ -102,7 +97,7 @@ body{
 .btn-container{
     position: absolute;
     display: block;
-    width: 80%;
+    width: 80vw;
     height: 104px;
     top: 50%;
     left: 50%;
@@ -111,7 +106,10 @@ body{
 }
 
 #slider, .slider-container, .slide-content{
-    width: 100%;
+    /* 1. Класс container выноси на отдельный div */
+    margin-right: -20%;
+    margin-left: -20%;
+    /* dlia sohraneniya punka 1 */
     height: 600px;
     overflow-x: hidden;
     position: relative;
@@ -435,7 +433,8 @@ body{
 }
 
 .footer{
-    position: relative;
+    margin-right: -20%;
+    margin-left: -20%;
     height: 88px;
     background-color: #323232;
     padding: 30px 0;
