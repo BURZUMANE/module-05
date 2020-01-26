@@ -31,7 +31,7 @@ body{
 }
 
 .container{
-    width: 80vw;
+    width: 1110px;
     margin: 0 auto;
 }
 
@@ -96,25 +96,34 @@ body{
 
 .btn-container{
     position: absolute;
-    display: block;
-    width: 80vw;
-    height: 104px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1;
+    z-index: 2;
 }
 
 #slider, .slider-container, .slide-content{
-    /* 1. Класс container выноси на отдельный div */
-    margin-right: -20%;
-    margin-left: -20%;
-    /* dlia sohraneniya punka 1 */
     height: 600px;
-    overflow-x: hidden;
     position: relative;
     color: #fff;
 }
+
+.slide-content img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide-content::before{
+    content: "";
+    position: absolute;
+    z-index: 300;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
 
 .slider-container{
     margin-bottom: 92px;
@@ -128,25 +137,6 @@ body{
     background-position: center;
 }
 
-.slide-image{
-    z-index: 10;
-    object-fit: cover;
-}
-
-.slide1{
-    background-image: url(../img/slide4.png);
-    background-color: rgba(0, 0, 0, 0.52);
-}
-
-.slide2{
-    background-image: url(../img/slide3.jpeg);
-    background-color: rgba(0, 0, 0, 0.52);
-}
-
-.slide3{
-    background-image: url(../img/avocado.jpg);
-    background-color: rgba(0, 0, 0, 0.52);
-}
 
 .slide::before{
     content: "";
@@ -161,17 +151,22 @@ body{
 
 .text-container{
     top: 50%;
-    width: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 2;
 }
 
 
+.slide-image{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
 
-.slide-content h2{
+.slide-title{
     font-size: 60px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 32px;
 }
 
@@ -179,7 +174,7 @@ body{
 
 .slide-content p{
     font-size: 24px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -433,8 +428,6 @@ body{
 }
 
 .footer{
-    margin-right: -20%;
-    margin-left: -20%;
     height: 88px;
     background-color: #323232;
     padding: 30px 0;
