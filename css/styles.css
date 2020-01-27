@@ -83,6 +83,7 @@ body{
     font-weight: 700;
     line-height: 0.786;
     line-height: 30px;
+    transition: color .4s ease;
 }
 
 .main-menu-item a:hover, .page-menu-item a:focus    {
@@ -197,6 +198,7 @@ body{
     top:50%;
     transform: translateY(-50%);
     background-color: #4ec6ac;
+    transition: opacity .4s ease;
     opacity: 0.52;
     width: 104px;
     height: 104px;  
@@ -292,6 +294,7 @@ body{
     opacity: 0;
     top: 0;
     left: 0;
+    transition: opacity .4s ease;
 }
 
 .collection-item:hover .colection-item-hidden{
@@ -305,7 +308,6 @@ body{
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
-
 }
 
 .hidden-content-narrow{
