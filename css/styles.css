@@ -92,7 +92,7 @@ body{
 /* MAIN */
 
 .main-content{
-    /* background-color: #e9f0fd; */
+    background-color: #e9f0fd;
 }
 
 .btn-container{
@@ -104,12 +104,12 @@ body{
 }
 
 #slider, .slider-container, .slide-content{
-    height: 600px;
     position: relative;
     color: #fff;
 }
 
 .slide-content img{
+    display: block;
     height: 600px;
     width: 100%;
     object-fit: cover;
@@ -126,8 +126,8 @@ body{
 }
 
 
-.slider-container{
-    margin-bottom: 92px;
+.slider-section {
+    padding-bottom: 92px;
 }
 
 .wrap{
@@ -254,7 +254,7 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 90px;
+    padding-bottom: 90px;
 }
 
 
@@ -268,14 +268,12 @@ body{
 }
 
 .collection-list{
-    max-width: 1110px;
     list-style: none;
 }
 
 .collection-item{
     float: left;
     position: relative;
-    height: 322px;
     width: 255px;
 }
 
@@ -283,10 +281,11 @@ body{
     margin-right: 30px;
 }
 
-.colection-item-hidden{
+.collection-item::before{
+    content: "";
     position: absolute;
     width: 100%;
-    height: 283px;
+    height: 286px;
     border-width: 10px;
     border-color: #ffffff;
     border-style: solid;
@@ -297,10 +296,21 @@ body{
     transition: opacity .4s ease;
 }
 
-.collection-item:hover .colection-item-hidden{
+.collection-item:hover::before{
     opacity: 0.549;
 }
+
 /* HIDDEN BUTTONS */
+.hidden-content-list{
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
 .hidden-content{
     opacity: 0;
     position: absolute;
@@ -328,8 +338,12 @@ body{
     background-position: center;
 }
 
-.hidden-btn:not(:last-child){
+.hidden-btn:not(:nth-child(3)){
     margin-right: 8px;
+}
+
+.hidden-btn:not(:nth-child(-n)){
+    margin-bottom: 7px;
 }
 
 .hidden-btn:hover{
@@ -378,7 +392,7 @@ body{
     background-image: url(../img/cart.png);
 }
 
-.collection-item:hover .hidden-content{
+.collection-item:hover .hidden-content-list{
     opacity: 1;
 }
 
@@ -399,6 +413,11 @@ body{
     text-align: left;
     text-transform: uppercase;
     padding: 4px 13px 4px;
+}
+
+.feeatured-item-name a{
+    display: block;
+    color: #fff;
 }
 
 .price-font{
