@@ -273,7 +273,6 @@ body{
 
 .collection-item{
     float: left;
-    position: relative;
     width: 255px;
 }
 
@@ -281,11 +280,24 @@ body{
     margin-right: 30px;
 }
 
-.collection-item::before{
+.image-container{
+    position: relative;
+    height: 282px;
+    width: 255px;
+}
+
+.image-container img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-container::before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 286px;
+    height: 100%;
     border-width: 10px;
     border-color: #ffffff;
     border-style: solid;
@@ -296,9 +308,10 @@ body{
     transition: opacity .4s ease;
 }
 
-.collection-item:hover::before{
+.collection-item:hover .image-container::before{
     opacity: 0.549;
 }
+
 
 /* HIDDEN BUTTONS */
 .hidden-content-list{
@@ -309,7 +322,26 @@ body{
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
+    transition: opacity .2s;
 }
+
+.collection-item:hover .hidden-content-list{
+    opacity: 1;
+}
+
+
+.hidden-content-list li{
+    float: left;
+}
+
+.hidden-content-list li:not(:nth-child(3)){
+    margin-right: 8px;
+}
+
+.hidden-content-list li:not(:nth-child(-n)){
+    margin-bottom: 7px;
+}
+
 
 .hidden-content{
     opacity: 0;
@@ -327,7 +359,6 @@ body{
 
 
 .hidden-btn{
-    float: left;
     border-width: 1px;
     border-color: #ffffff;
     border-style: solid;
@@ -336,20 +367,12 @@ body{
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.hidden-btn:not(:nth-child(3)){
-    margin-right: 8px;
-}
-
-.hidden-btn:not(:nth-child(-n)){
-    margin-bottom: 7px;
+    cursor: pointer;
 }
 
 .hidden-btn:hover{
     background-color: #1abc9c;
 }
-
 
 .btn-wide{
     text-align: center;
@@ -392,19 +415,12 @@ body{
     background-image: url(../img/cart.png);
 }
 
-.collection-item:hover .hidden-content-list{
-    opacity: 1;
-}
-
 
 /* CARD PRICES AND DETAILS */
 .featured-item-details{
-    position: absolute;
-    bottom: 0;
     padding: 0;
     background-color: #323232;
-    height: 40px;
-    width: 255px;
+    font-weight: 900;   
 }
 
 .feeatured-item-name{
@@ -463,6 +479,8 @@ body{
     line-height: 1.75;
 }
 
-.footer p span{
+.footer p a{
+    display: inline-block;
+    text-decoration: none;
     color: #46bfa9;
 }
