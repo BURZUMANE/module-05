@@ -313,7 +313,6 @@ body{
 
 /* HIDDEN BUTTONS */
 .hidden-content-list{
-    outline: 1px solid teal;
     list-style: none;
     opacity: 0;
     position: absolute;
